@@ -1,4 +1,4 @@
-local M = 
+local M =
 {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
@@ -11,6 +11,11 @@ local M =
     },
     config = function()
         require("nvim-treesitter.configs").setup({
+            ensure_installed = { "c_sharp", "html", "json", "lua", "typescript", "vimdoc", "yaml" },
+            sync_install = false,
+            auto_install = false,
+            ignore_install = {},
+            modules = {},
             indent = { enable = true },
             autopairs = { enable = true },
             highlight = { enable = true },
@@ -44,7 +49,6 @@ local M =
         })
 
         require("nvim-ts-autotag").setup()
-
     end,
 }
 

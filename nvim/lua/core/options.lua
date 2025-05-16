@@ -67,9 +67,10 @@ vim.o.scrolloff = settings.scrolloff
 -- make copying better
 -- keymap("n", "Y", "yg$", opts)
 keymap("n", "<leader>y", "\"+y", opts)
+-- copy whole big word into global buffer
 keymap("n", "<leader>j", "\"+yiW", opts)
 keymap("v", "<leader>y", "\"+y", opts)
-vim.api.nvim_set_keymap('n', '<Leader>Y', '"+yg$', { noremap=true})
+vim.api.nvim_set_keymap('n', '<Leader>Y', '"+yg$', { noremap = true })
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
@@ -78,15 +79,15 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- format selected JSON
-keymap("v", "jq", ":!jq<cr>", opts)
+keymap("v", "<leader>jq", ":!jq<cr>", opts)
 
 vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
-    expr = true,
-    replace_keycodes = false
+  expr = true,
+  replace_keycodes = false
 })
 vim.g.copilot_no_tab_map = true
 
 local qf_func = {}
 
 qf_func["toggle"] = "<cmd>lua require('core.utils.functions').toggle_qf()<CR>"
-keymap("n", "<leader>qq", qf_func["toggle"], {desc = "Toggle quickfix"})
+keymap("n", "<leader>qq", qf_func["toggle"], { desc = "Toggle quickfix" })

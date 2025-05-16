@@ -17,9 +17,10 @@ local M = {
         { "<leader>sh", "<cmd>Telescope help_tags<cr>", desc = "Help" },
         { "<leader>?", "<cmd>Telescope oldfiles<cr>", desc = '[S]earch Recent Files ("." for repeat)' },
         { "<leader>sk", "<cmd>Telescope keymaps<cr>", desc = "Keymaps" },
-        { "<leader>sR", "<cmd>Telescope registers<cr>", desc = "Registers" },
+        { "<leader>rr", "<cmd>Telescope registers<cr>", desc = "Registers" },
         { "<leader>ss", "<cmd>Telescope grep_string<cr>", desc = "Text under cursor" },
         { "<leader>s;", "<cmd>Telescope command_history<cr>", desc = "Command history" },
+        { "<leader>sa", "<cmd>Telescope search_history<cr>", desc = "Search history" },
         -- git
         -- files
         { "<leader>fb", "<cmd>Telescope file_browser path=%:p:h select_buffer=true grouped=true<cr>", desc = "Filebrowser" },

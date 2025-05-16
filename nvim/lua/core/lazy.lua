@@ -15,5 +15,7 @@ vim.opt.runtimepath:prepend(lazypath)
 -- Must be before lazy
 vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 vim.g.mapleader = " "
+-- gui colors
+vim.opt.termguicolors = true
 
 require("lazy").setup("core.plugins")
