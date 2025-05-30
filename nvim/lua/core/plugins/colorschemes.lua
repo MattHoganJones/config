@@ -1,5 +1,11 @@
 local M = {
     {
+        'nyngwang/nvimgelion',
+        config = function()
+            -- vim.cmd("colorscheme nvimgelion")
+        end,
+    },
+    {
         'rose-pine/neovim',
         name = 'rose-pine',
         lazy = false,
@@ -19,6 +25,7 @@ local M = {
         },
         config = function()
             require("core.plugins.themes.tokyonight")
+            vim.cmd("colorscheme tokyonight-night")
         end,
     },
     {
@@ -33,13 +40,37 @@ local M = {
         lazy = false,
         priority = 1000,
     },
-    { 
-        "catppuccin/nvim", 
-        name = "catppuccin", 
+    {
+        "catppuccin/nvim",
+        name = "catppuccin",
+        priority = 1000,
+        -- config = function()
+        --     vim.cmd("colorscheme catppuccin-mocha")
+        -- end,
+    },
+    {
+        "Mofiqul/dracula.nvim",
+        name = "dracula",
+        priority = 1000,
+        -- config = function()
+        --     vim.cmd("colorscheme dracula")
+        -- end,
+    },
+    {
+        'maxmx03/fluoromachine.nvim',
+        lazy = false,
         priority = 1000,
         config = function()
-            vim.cmd("colorscheme catppuccin-mocha")
-        end,
+            local fm = require 'fluoromachine'
+
+            fm.setup {
+                glow = true,
+                theme = 'fluoromachine',
+                transparent = true,
+            }
+
+            -- vim.cmd.colorscheme 'fluoromachine'
+        end
     }
 }
 

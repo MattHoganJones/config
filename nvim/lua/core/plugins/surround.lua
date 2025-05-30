@@ -4,7 +4,18 @@ local M = {
     event = "VeryLazy",
     config = function()
         require("nvim-surround").setup({
-            -- Configuration here, or leave empty to use defaults
+            keymaps = {
+                insert          = '<C-g>z',
+                insert_line     = 'gC-ggZ',
+                normal          = 'gz',
+                normal_cur      = 'gZ',
+                normal_line     = 'gzz',
+                normal_cur_line = 'gZZ',
+                visual          = 'gz',
+                visual_line     = 'gZ',
+                delete          = 'gzd',
+                change          = 'gzc',
+            }
         })
     end
 }
