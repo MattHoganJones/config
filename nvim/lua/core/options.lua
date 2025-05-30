@@ -91,3 +91,4 @@ local qf_func = {}
 
 qf_func["toggle"] = "<cmd>lua require('core.utils.functions').toggle_qf()<CR>"
 keymap("n", "<leader>qq", qf_func["toggle"], { desc = "Toggle quickfix" })
+vim.keymap.set("n", "<leader>vca", vim.lsp.buf.code_action, opts)
