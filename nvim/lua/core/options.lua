@@ -81,6 +81,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 -- format selected JSON
 keymap("v", "<leader>jq", ":!jq<cr>", opts)
 
+-- accept copilot suggestions
 vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
   expr = true,
   replace_keycodes = false

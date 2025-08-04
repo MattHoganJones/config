@@ -1,6 +1,4 @@
 -- no Lua alternative
-local M = {
+return {
   "tpope/vim-fugitive",
 }
-
-return M

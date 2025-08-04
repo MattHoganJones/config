@@ -1,4 +1,4 @@
-local M = {
+return {
     {
         "nvim-lualine/lualine.nvim",
         event = "VeryLazy",
@@ -25,5 +25,3 @@ local M = {
         end
     }
 }
-
-return M

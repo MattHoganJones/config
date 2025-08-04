@@ -25,6 +25,7 @@ return {
         "saadparwaiz1/cmp_luasnip",
         "j-hui/fidget.nvim",
         'jose-elias-alvarez/typescript.nvim',
+        'yioneko/nvim-vtsls',
     },
 
     config = function()
@@ -52,8 +53,8 @@ return {
             ensure_installed = {
                 "angularls",
                 "lua_ls",
-                "ts_ls",
                 "csharp_ls",
+                -- "ts_ls",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
@@ -81,6 +82,18 @@ return {
                         }
                     }
                 end,
+            }
+        })
+        require("lspconfig").vtsls.setup({
+            on_attach = lsp_attach,
+            capabilities = lsp_capabilities,
+
+            settings = {
+                typescript = {
+                    preferences = {
+                        importModuleSpecifier = "non-relative",
+                    },
+                },
             }
         })
 

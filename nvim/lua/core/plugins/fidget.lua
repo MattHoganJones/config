@@ -1,8 +1,6 @@
-local M = {
+return {
   "j-hui/fidget.nvim",
   opts = {
 
   }
 }
-
-return M

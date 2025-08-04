@@ -1,4 +1,4 @@
-local M = {
+return {
 
   -- "stevearc/oil.nvim",
   -- keys = {
@@ -20,4 +20,3 @@ local M = {
     require('oil').setup()
   end,
 }
-return M
