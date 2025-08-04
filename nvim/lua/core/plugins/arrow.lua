@@ -1,4 +1,4 @@
-local M = {
+return {
   "otavioschwanck/arrow.nvim",
   opts = {
     show_icons = true,
@@ -6,5 +6,3 @@ local M = {
     --buffer_leader_key = 'm', -- Per Buffer Mappings
   },
 }
-return M
-

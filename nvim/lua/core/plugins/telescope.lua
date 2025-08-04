@@ -1,4 +1,4 @@
-local M = {
+return {
     "nvim-telescope/telescope.nvim",
     lazy = false,
     cmd = "Telescope",
@@ -99,11 +99,11 @@ local M = {
                         -- https://github.com/nvim-telescope/telescope.nvim/blob/master/lua/telescope/mappings.lua
                         ["<esc>"] = actions.close,
                         ["<C-j>"] = actions.move_selection_next,
+                        ["<C-k>"] = actions.move_selection_previous,
                         ["<PageUp>"] = actions.results_scrolling_up,
                         ["<PageDown>"] = actions.results_scrolling_down,
                         ["<C-u>"] = actions.preview_scrolling_up,
                         ["<C-d>"] = actions.preview_scrolling_down,
-                        ["<C-k>"] = actions.move_selection_previous,
                         ["<C-r>"] = actions.smart_send_to_qflist,
                         ["<C-l>"] = actions.send_to_qflist,
                         --["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,
@@ -164,5 +164,3 @@ local M = {
         --telescope.load_extension("fzf")
     end,
 }
-
-return M

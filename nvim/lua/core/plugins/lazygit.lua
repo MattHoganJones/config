@@ -1,4 +1,4 @@
-local M = -- nvim v0.8.0
+return -- nvim v0.8.0
 {
   "kdheepak/lazygit.nvim",
   cmd = {
@@ -18,5 +18,3 @@ local M = -- nvim v0.8.0
     { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
   }
 }
-
-return M

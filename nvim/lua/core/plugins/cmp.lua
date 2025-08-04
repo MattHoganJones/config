@@ -1,4 +1,4 @@
-local M = {
+return {
   "hrsh7th/nvim-cmp",
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
@@ -49,6 +49,7 @@ local M = {
         { name = "calc" },
         { name = "path" },
         { name = "rg", keyword_length = 5 },
+        { name = "lazydev", group_index = 0 }
         -- { omni = true }, -- completion for vimtex - is this necessary?
       },
     })
@@ -72,5 +73,3 @@ local M = {
     })
   end,
 }
-
-return M

@@ -1,4 +1,4 @@
-local M = {
+return {
   "folke/which-key.nvim",
     event = "VimEnter", -- sets the loading event to 'VimEnter'
   config = function()
@@ -82,5 +82,3 @@ local M = {
     }]])
   end,
 }
-
-return M

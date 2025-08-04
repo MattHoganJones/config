@@ -33,7 +33,7 @@
 --   },
 -- }
 
-local M = {
+return {
   "NeogitOrg/neogit",
   dependencies = {
     "nvim-lua/plenary.nvim",  -- required
@@ -46,5 +46,3 @@ local M = {
   },
   config = true
 }
-
-return M

@@ -1,4 +1,4 @@
-local M = {
+return {
   "lewis6991/gitsigns.nvim",
   event = { "BufRead", "BufNewFile" },
   dependencies = {
@@ -8,5 +8,3 @@ local M = {
     require("gitsigns").setup()
   end,
 }
-
-return M

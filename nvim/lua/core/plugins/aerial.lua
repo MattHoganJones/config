@@ -1,4 +1,4 @@
-local M = {
+return {
   'stevearc/aerial.nvim',
   opts = {},
   dependencies = {
@@ -15,4 +15,3 @@ local M = {
     vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")
   end,
 }
-return M

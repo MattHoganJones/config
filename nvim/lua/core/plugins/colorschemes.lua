@@ -1,9 +1,18 @@
-local M = {
+return {
     {
         'nyngwang/nvimgelion',
-        config = function()
-            -- vim.cmd("colorscheme nvimgelion")
-        end,
+        -- config = function()
+        --     -- vim.cmd("colorscheme nvimgelion")
+        -- end,
+    },
+    {
+        'sainnhe/gruvbox-material',
+        -- config = function()
+        --     vim.cmd("colorscheme gruvbox-material")
+        -- end,
+    },
+    {
+        'rmehri01/onenord.nvim',
     },
     {
         'rose-pine/neovim',
@@ -73,5 +82,3 @@ local M = {
         end
     }
 }
-
-return M

@@ -1,5 +1,3 @@
-local M = {
+return {
   "sindrets/diffview.nvim",
 }
-
-return M
